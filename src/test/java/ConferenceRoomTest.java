@@ -63,4 +63,26 @@ public class ConferenceRoomTest {
     public void guestsInRoom() {
         assertEquals(2, conferenceRoom1.guestsInRoom());
     }
+
+    @Test
+    public void getName() {
+        assertEquals("C1", conferenceRoom1.getName());
+    }
+
+    @Test
+    public void setName() {
+        conferenceRoom1.setName("C3");
+        assertEquals("C3", conferenceRoom1.getName());
+    }
+
+    @Test
+    public void getRate() {
+        assertEquals(100.00, conferenceRoom1.getRate(), 1.0);
+    }
+
+    @Test
+    public void setRate() {
+        conferenceRoom1.setRate(200.00);
+        assertEquals(200.00, conferenceRoom1.getRate(), 1.0);
+    }
 }
