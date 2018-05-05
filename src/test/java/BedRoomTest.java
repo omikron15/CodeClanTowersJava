@@ -65,5 +65,37 @@ public class BedRoomTest {
         assertEquals(2, bedroom1.guestsInRoom());
     }
 
+    @Test
+    public void getRoomNumber() {
+        assertEquals(100, bedroom1.getRoomNo());
+    }
+
+    @Test
+    public void setRoomNumber() {
+        bedroom1.setRoomNo(200);
+        assertEquals(200, bedroom1.getRoomNo());
+    }
+
+    @Test
+    public void getRate() {
+        assertEquals(75.00, bedroom1.getRate(), 1.0);
+    }
+
+    @Test
+    public void setRate() {
+        bedroom1.setRate(200.00);
+        assertEquals(200.00, bedroom1.getRate(), 1.0);
+    }
+
+    @Test
+    public void getType() {
+        assertEquals(RoomType.SINGLE ,bedroom1.getType());
+    }
+
+    @Test
+    public void setType() {
+        bedroom1.setType(RoomType.DOUBLE);
+        assertEquals(RoomType.DOUBLE, bedroom1.getType());
+    }
 
 }
