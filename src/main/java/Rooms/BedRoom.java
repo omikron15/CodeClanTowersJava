@@ -13,6 +13,27 @@ public class BedRoom extends Room{
         this.type = type;
     }
 
+    public int getRoomNo() {
+        return roomNo;
+    }
 
+    public double getRate() {
+        return rate;
+    }
 
+    public RoomType getType() {
+        return type;
+    }
+
+    public void setRoomNo(int roomNo) {
+        this.roomNo = roomNo;
+    }
+
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
+
+    public void setType(RoomType type) {
+        this.type = type;
+    }
 }
