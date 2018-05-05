@@ -1,5 +1,6 @@
 import Guests.Guest;
 import Rooms.BedRoom;
+import Rooms.RoomType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,8 +14,8 @@ public class BedRoomTest {
 
     @Before
     public void before(){
-        bedroom1 = new BedRoom(2);
-        bedroom2 = new BedRoom(3);
+        bedroom1 = new BedRoom(2, 100, 75.00, RoomType.SINGLE);
+        bedroom2 = new BedRoom(3, 110, 80.00, RoomType.DOUBLE);
         bedroom1.addGuest(guest1);
         bedroom1.addGuest(guest1);
     }
