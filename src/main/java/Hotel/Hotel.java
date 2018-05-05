@@ -1,9 +1,6 @@
 package Hotel;
 
-import Rooms.BedRoom;
-import Rooms.ConferenceRoom;
-import Rooms.DiningRoom;
-import Rooms.Room;
+import Rooms.*;
 
 import java.util.ArrayList;
 
@@ -48,4 +45,6 @@ public class Hotel {
     public void addConferenceroom(ConferenceRoom room){
         this.conferencerooms.add(room);
     }
+
+
 }
