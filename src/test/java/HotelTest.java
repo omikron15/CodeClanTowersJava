@@ -1,3 +1,4 @@
+import Guests.Guest;
 import Hotel.Hotel;
 import Rooms.BedRoom;
 import Rooms.ConferenceRoom;
@@ -6,6 +7,7 @@ import Rooms.RoomType;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class HotelTest {
 
@@ -13,6 +15,7 @@ public class HotelTest {
     BedRoom bedroom1;
     ConferenceRoom conferenceroom1;
     DiningRoom diningroom1;
+    Guest guest1;
 
     @Before
     public void before(){
@@ -35,6 +38,24 @@ public class HotelTest {
         assertEquals(1, hotel1.bedRoomCount());
         assertEquals(1, hotel1.conferenceRoomCount());
         assertEquals(1, hotel1.diningRoomCount());
+    }
+
+    @Test
+    public void addGuestToBedroom(){
+        hotel1.addGuestToBedroom(guest1, bedroom1);
+        assertEquals(1, bedroom1.guestsInRoom());
+    }
+
+    @Test
+    public void addGuestToConferenceroom(){
+        hotel1.addGuestToConferenceroom(guest1, conferenceroom1);
+        assertEquals(1, conferenceroom1.guestsInRoom());
+    }
+
+    @Test
+    public void addGuestToDiningroom(){
+        hotel1.addGuestToDiningroom(guest1, diningroom1);
+        assertEquals(1, diningroom1.guestsInRoom());
     }
 
 

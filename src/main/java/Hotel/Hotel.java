@@ -1,5 +1,6 @@
 package Hotel;
 
+import Guests.Guest;
 import Rooms.*;
 
 import java.util.ArrayList;
@@ -46,5 +47,16 @@ public class Hotel {
         this.conferencerooms.add(room);
     }
 
+    public void addGuestToBedroom(Guest guest, BedRoom bedroom){
+        bedroom.addGuest(guest);
+    }
+
+    public void addGuestToConferenceroom(Guest guest, ConferenceRoom conferenceroom){
+        conferenceroom.addGuest(guest);
+    }
+
+    public void addGuestToDiningroom(Guest guest, DiningRoom diningroom){
+        diningroom.addGuest(guest);
+    }
 
 }
