@@ -47,16 +47,12 @@ public class Hotel {
         this.conferencerooms.add(room);
     }
 
-    public void addGuestToBedroom(Guest guest, BedRoom bedroom){
-        bedroom.addGuest(guest);
+    public void addGuest(Guest guest, Room room){
+        room.addGuest(guest);
     }
 
-    public void addGuestToConferenceroom(Guest guest, ConferenceRoom conferenceroom){
-        conferenceroom.addGuest(guest);
-    }
-
-    public void addGuestToDiningroom(Guest guest, DiningRoom diningroom){
-        diningroom.addGuest(guest);
+    public ArrayList<Guest> getGuests(Room room){
+        return room.getGuests();
     }
 
 }

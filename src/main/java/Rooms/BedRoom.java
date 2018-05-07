@@ -1,5 +1,7 @@
 package Rooms;
 
+import Guests.Guest;
+
 public class BedRoom extends Room{
 
     private int roomNo;
@@ -36,4 +38,5 @@ public class BedRoom extends Room{
     public void setType(RoomType type) {
         this.type = type;
     }
+
 }
